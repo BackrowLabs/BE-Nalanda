@@ -1,0 +1,16 @@
+# Local development overrides — DO NOT commit real secrets
+spring:
+  jpa:
+    show-sql: true
+
+  flyway:
+    enabled: true
+
+app:
+  cors:
+    allowed-origins: http://localhost:5173
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
